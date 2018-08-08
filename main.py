@@ -2,6 +2,7 @@ from secrets import botToken
 from telegram.ext import Updater
 from telegram.ext import CommandHandler
 from telegram.ext import MessageHandler, Filters
+from telegram import ParseMode
 from random import randint
 
 updater = Updater(token=botToken)
@@ -9,7 +10,8 @@ dispatcher = updater.dispatcher
 
 
 def start(bot, update):
-    bot.send_message(chat_id=update.message.chat_id, text="What's up nigga?")
+    statement = "باهام حرف بزن! \nسازنده: [روزبه اکبری](https://twitter.com/roozbeh_ce)"
+    bot.send_message(chat_id=update.message.chat_id, text=statement, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
 
 def echo(bot, update):

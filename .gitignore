@@ -1,5 +1,6 @@
 # PyCharm default folder
 /.idea
+/__pycache__
 
 # Secret variables
 secrets.py
