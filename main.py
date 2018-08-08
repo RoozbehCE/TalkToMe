@@ -10,7 +10,7 @@ dispatcher = updater.dispatcher
 
 
 def start(bot, update):
-    statement = "باهام حرف بزن! \nسازنده: [روزبه اکبری](https://twitter.com/roozbeh_ce)"
+    statement = "Talk to Me! \nDeveloper: [Roozbeh Akbari](https://twitter.com/Roozbeh_CE)"
     bot.send_message(chat_id=update.message.chat_id, text=statement, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
 
